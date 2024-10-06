@@ -1,0 +1,8 @@
+name: hello-tf
+dependencies:
+    - python=3.9
+    - jupyter
+    - ipython
+    - pandas
+    - scipy
+    - tensorflow

@@ -1,0 +1,10 @@
+services:
+
+  app:
+    build:
+      context: docker/build
+      dockerfile: Dockerfile
+    volumes:
+      - "./hello_tf/:/opt/notebooks"
+    ports:
+      - "8888:8888"
