@@ -1,13 +1,5 @@
 FROM continuumio/anaconda3:2024.06-1
 
-# Install system dependencies needed for Poetry and Python build tools
-RUN apt-get update && apt-get install -y \
-    curl \
-    build-essential \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-
 WORKDIR /opt/notebooks
 
 ADD hello_tf.yml /opt/notebooks
